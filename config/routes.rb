@@ -5,7 +5,7 @@ ClientRoulette::Application.routes.draw do
 
   resources :caller_queues
 
-  resources :roulette
+  match 'spin' => 'roulette#spin'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

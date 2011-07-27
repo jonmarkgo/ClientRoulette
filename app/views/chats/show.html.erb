@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Caller1:</b>
+  <%= @chat.caller1 %>
+</p>
+
+<p>
+  <b>Caller2:</b>
+  <%= @chat.caller2 %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @chat.start_time %>
+</p>
+
+<p>
+  <b>End time:</b>
+  <%= @chat.end_time %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%= @chat.reason %>
+</p>
+
+
+<%= link_to 'Edit', edit_chat_path(@chat) %> |
+<%= link_to 'Back', chats_path %>

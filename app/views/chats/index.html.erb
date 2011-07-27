@@ -1,0 +1,31 @@
+<h1>Listing chats</h1>
+
+<table>
+  <tr>
+    <th>Caller1</th>
+    <th>Caller2</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Reason</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @chats.each do |chat| %>
+  <tr>
+    <td><%= chat.caller1 %></td>
+    <td><%= chat.caller2 %></td>
+    <td><%= chat.start_time %></td>
+    <td><%= chat.end_time %></td>
+    <td><%= chat.reason %></td>
+    <td><%= link_to 'Show', chat %></td>
+    <td><%= link_to 'Edit', edit_chat_path(chat) %></td>
+    <td><%= link_to 'Destroy', chat, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Chat', new_chat_path %>

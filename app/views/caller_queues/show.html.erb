@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Caller:</b>
+  <%= @caller_queue.caller_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_caller_queue_path(@caller_queue) %> |
+<%= link_to 'Back', caller_queues_path %>

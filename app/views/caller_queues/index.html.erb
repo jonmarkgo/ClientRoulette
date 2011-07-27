@@ -1,0 +1,23 @@
+<h1>Listing caller_queues</h1>
+
+<table>
+  <tr>
+    <th>Caller</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @caller_queues.each do |caller_queue| %>
+  <tr>
+    <td><%= caller_queue.caller_id %></td>
+    <td><%= link_to 'Show', caller_queue %></td>
+    <td><%= link_to 'Edit', edit_caller_queue_path(caller_queue) %></td>
+    <td><%= link_to 'Destroy', caller_queue, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Caller queue', new_caller_queue_path %>

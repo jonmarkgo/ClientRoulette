@@ -1,0 +1,21 @@
+<%= form_for(@caller_queue) do |f| %>
+  <% if @caller_queue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@caller_queue.errors.count, "error") %> prohibited this caller_queue from being saved:</h2>
+
+      <ul>
+      <% @caller_queue.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :caller_id %><br />
+    <%= f.text_field :caller_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

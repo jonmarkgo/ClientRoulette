@@ -1,4 +1,10 @@
 ClientRoulette::Application.routes.draw do
+  resources :chats
+
+  resources :callers
+
+  resources :caller_queues
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

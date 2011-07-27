@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  phone: 1
+  device: 1
+  id: 1
+
+two:
+  phone: 1
+  device: 1
+  id: 1
